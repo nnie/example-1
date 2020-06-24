@@ -1,0 +1,46 @@
+.Search {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px;
+}
+
+.Search input {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  color: currentColor;
+  font-size: 1.5em;
+  background: #000000;
+  border: 1px solid #232323;
+}
+
+.Search ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.4em;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background: #00000033;
+  text-align: left;
+  line-height: 2;
+}
+
+.Search:focus-within ul:not(:empty) {
+  transform: translateY(0);
+  bottom: auto;
+}
+
+.Search ul:empty {
+  transform: translateY(-10%);
+}
+
+.Search > button {
+  font-size: 2.5em;
+  line-height: 1.5;
+  margin-left: calc(-0.2em - 1em);
+  padding-right: 0.2em;
+}

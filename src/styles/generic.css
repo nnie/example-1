@@ -1,0 +1,63 @@
+@import-normalize;
+
+:root {
+  --dark: #161616;
+  --light: #eee;
+  --brand: forestgreen;
+  --accent: #9e9e9e;
+}
+
+body {
+  margin: 0;
+  font-size: calc(10px + 1vmin);
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: forestgreen;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  padding: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  color: forestgreen;
+}
+
+svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}

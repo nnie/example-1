@@ -1,0 +1,41 @@
+.App {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 50vw;
+  height: 50vw;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+}
+
+.App-header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  padding: 1.5em;
+  transition: transform 0.2s;
+}
+
+.App-header:focus-within {
+  transform: translateY(calc(50vh - 15vh));
+}
+
+.App-header:focus-within ~ * {
+  filter: blur(5px);
+}
+
+.App-notification {
+  min-height: 1.5em;
+  background: #795548;
+  color: var(--light);
+}

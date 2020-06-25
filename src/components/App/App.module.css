@@ -36,6 +36,6 @@
 
 .App-notification {
   min-height: 1.5em;
-  background: #795548;
+  background: var(--warning);
   color: var(--light);
 }

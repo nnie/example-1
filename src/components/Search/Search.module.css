@@ -27,6 +27,7 @@
   background: #00000033;
   text-align: left;
   line-height: 2;
+
 }
 
 .Search:focus-within ul:not(:empty) {

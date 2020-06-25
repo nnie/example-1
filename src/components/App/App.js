@@ -46,7 +46,9 @@ function App() {
         </div>
       </header>
 
-      <main>{repos && <Repos data={repos} />}</main>
+      <main>
+        <Repos data={repos} />
+      </main>
     </div>
   );
 }
